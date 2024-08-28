@@ -1,0 +1,87 @@
+.viewport {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-image: url('../../assets/Sun\ rose.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.login {
+    height: 35rem;
+    width: 25rem;
+    background-color: rgba(184, 182, 182, 1);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.childDiv {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+.input {
+    width: 80%;
+    height: 50%;
+    background-color: rgba(237, 237, 239, 1);
+    opacity: 0.9;
+    color: black;
+    border-radius: 50px;
+    padding: 5px;
+    border: 0px
+}
+
+.button {
+    background-color: orangered;
+    border-radius: 50px;
+    color: white;
+    height: 2.5rem;
+    width: 7rem;
+}
+
+.error {
+    color: red;
+}
+
+.text {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Brush Script MT', cursive;
+    font-style: italic;
+    text-align: left;
+}
+
+@media only screen and (max-width: 769px) {
+    .login {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(184, 182, 182, 1);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../../assets/Sun\ rose.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* justify-content: center; */
+    }
+
+}
