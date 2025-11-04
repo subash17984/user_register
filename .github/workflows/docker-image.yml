@@ -33,9 +33,9 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: ./path/to
-          file: ./path/to/Dockerfile
-          push: true                        # 🚀 push image to Docker Hub
+          context: .
+          file: ./Dockerfile
+          push: false                        # 🚀 push image to Docker Hub
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-frontend:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
