@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # Step 2: Serve the app with Nginx
-FROM nginx:alphine
+FROM nginx:alpine
 COPY --from=build /frontend/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx","-g", "daemon off;"]
