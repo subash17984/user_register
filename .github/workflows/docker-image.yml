@@ -35,7 +35,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: false                        # 🚀 push image to Docker Hub
+          push: true                        # 🚀 push image to Docker Hub
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-frontend:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
